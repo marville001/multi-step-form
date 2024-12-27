@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
-      <div className="container max-w-3xl">
+      <div className="container max-w-3xl overflow-hidden">
         <FormProvider {...methods}>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
             <div className="bg-white shadow-sm rounded-xl p-8">
@@ -65,7 +65,7 @@ function App() {
                         {s.number}
                       </div>
                       <span
-                        className={`ml-2 text-sm text-center ${
+                        className={`ml-2 text-sm hidden md:inline-block text-center ${
                           step >= s.number ? 'text-gray-900' : 'text-gray-400'
                         }`}
                       >
@@ -73,7 +73,7 @@ function App() {
                       </span>
                     </div>
                     {index < steps.length - 1 && (
-                      <div className="flex-1 h-[1px] w-[60px] bg-gray-200 mx-4" />
+                      <div className="flex-1 h-[1px] w-[30px] lg:w-[60px] bg-gray-200 mx-4" />
                     )}
                   </div>
                 ))}
