@@ -7,9 +7,9 @@ export function AddressForm() {
 
   return (
     <div className="space-y-6">
-      <div className="text-left mb-8">
+      <div className="mb-8 text-left">
         <h2 className="text-2xl font-bold text-gray-900">Address Information</h2>
-        <p className="text-sm text-gray-500 mt-1">Step 2/4</p>
+        <p className="mt-1 text-sm text-gray-500">Step 2/4</p>
       </div>
 
       <div className="space-y-2">
@@ -26,7 +26,7 @@ export function AddressForm() {
         )}
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid gap-4 md:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="city">City</Label>
           <Input 

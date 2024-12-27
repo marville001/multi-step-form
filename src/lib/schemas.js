@@ -7,9 +7,9 @@ export const formSchema = z.object({
   phone: z.string().min(10, "Phone number must be at least 10 digits"),
   
   // Address Info
-  street: z.string().min(5, "Street address is required"),
-  city: z.string().min(2, "City is required"),
-  state: z.string().length(2, "Please use 2-letter state code"),
+  street: z.string().min(1, "Street address is required"),
+  city: z.string().min(1, "City is required"),
+  state: z.string().min(1, "State is required"),
   zipCode: z.string().regex(/^\d{5}(-\d{4})?$/, "Invalid ZIP code"),
   
   // Additional Info
