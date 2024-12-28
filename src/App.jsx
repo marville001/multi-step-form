@@ -17,6 +17,7 @@ const steps = [
 
 function App() {
     const [step, setStep] = useState(1);
+
     const methods = useForm({
         resolver: zodResolver(formSchema),
         mode: "onChange",

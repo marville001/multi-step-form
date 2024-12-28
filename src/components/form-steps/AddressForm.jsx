@@ -46,7 +46,6 @@ export function AddressForm() {
           <Input 
             id="state" 
             {...register("state")}
-            maxLength={2}
             className={`border-gray-200 focus:border-blue-500 focus:ring-blue-500 uppercase ${
               errors.state ? 'border-red-300 bg-red-50' : ''
             }`}
